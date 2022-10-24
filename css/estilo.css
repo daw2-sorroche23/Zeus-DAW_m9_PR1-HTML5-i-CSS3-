@@ -1,0 +1,291 @@
+/*Le ponemos a todo margin y paddin 0 */
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Para que los paddings y los margins no se sumen el ancho de los elementos*/
+}
+
+/*Ponemos estilo a toda la etiqueta body*/
+
+body{
+    font-family: "Open Sans", sans-serif; /*Le ponemos un estilo de letra que mediante un link añadimos al html*/
+    font-size: 13pt; /*tamaño de la letra*/
+    color: #7f888f; /*color de la letra*/
+    font-weight: 400; /*tamaño de la letra*/
+    line-height: 1.65;/*sirve para el interliniado del texto*/
+}
+
+/*Le ponemos estilo a los titulos h2*/
+
+h2{
+    color: #3d4449;
+    font-family: "Roboto Slab", serif; /*Le ponemos un estilo al texto mediante un link añadimos al html*/
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.38889em;
+}
+
+/*Ponemos estilo a los parrafos*/
+
+p{
+    margin: 0 0 2em 0;
+}
+
+/*Aqui a los h2 le ponemos el border-bottom con su repectivo estilo */
+
+.bajo{
+    border-bottom: solid 3px #f56a6a;
+    display: inline-block;
+    margin: 0 0 2em 0;
+    padding: 0 0.75em 0.5em 0;
+    border-bottom: solid 3px #f56a6a;/*le ponemos un borde solo en la parte de abajo*/
+}
+
+/* Aqui  a los botones que son a le damos estilo para que se parezca mas a esto */
+
+.boton{
+    background-color: transparent; /* Le ponemos de color de fondo transparente */
+    border-radius: 0.375em; /* Redondemos un poco los bordes*/
+    border: 0;
+    box-shadow: inset 0 0 0 2px #f56a6a; /* Le ponemos al borde un poco de sombra*/
+    color: #f56a6a;
+    cursor: pointer; /* Con este cada vez que tengamos el cursor sobre los botones cambiara*/
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;
+    letter-spacing: 0.075em; /* le ponemos un espaciado a la letra */ 
+    line-height: 3.5em;
+    padding: 0 2.25em;
+    text-align: center; /* centramos el texto en el centro */
+    text-decoration: none; /* Le quitmos estilo que tiene el estilo */
+    text-transform: uppercase; /* Con esto ponemos todo el contenido en mayuscula si no lo estuviera */
+    white-space: nowrap; /*Con esto hacemos que el texto simpre este fijo (que no se ajuste automaticamente con el tamaño de la ventana)*/
+}
+
+/*Le damos formato a la cabezera de la pagina web*/
+
+.cabezera{
+    display: flex;
+    border-bottom: solid 5px #f56a6a;
+    position: relative; /*ajustamos el texto para que encaje*/
+    align-items: center; /*alineamos todo en el centro*/
+ }
+
+/*Le ponemos estilo a los iconos de las redes sociales*/
+
+.social{ 
+    display: flex;
+    list-style: none; /*le quitamos el estilo a la lista que hemos echo */
+}
+
+/* Le ponemos un display-flex a toda la pagina */
+.todo{
+    display:flex ;
+}
+
+/* Le ponemos estilo a toda la barra del menu de la derecha */
+
+.menu-oculto{
+    background-color: #f5f6f7;
+    font-size: 0.9em;
+    position: relative;
+    padding: 1.66667em 1.66667em 1.33333em 1.66667em; /*le ponemos padding por todos los lados */
+    width: 24em;
+
+}
+
+/*Le ponemos un espacio debajo al buscador para que este un poco separado del menu */
+
+.buscador{
+    margin-bottom: 1em;
+}
+
+/*Le ponemos un estilo al input del buscador*/
+
+input[type=text] {
+    appearance: none;
+    background: #ffffff;
+    border-radius: 0.375em;
+    border: none;
+    border: solid 1px rgba(210, 215, 217, 0.75);
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+  }
+
+/* Le quitamos el estilo a todo el navegador del menu */
+
+nav>ul{ 
+    list-style:none;
+}
+
+/*Le ponemos estilo al unico link que hay en el apartado de contactanos*/
+
+.contactos a{
+    font-size: 15px;
+    text-decoration: none; 
+    padding-left: 3%;
+    color: #7F888F;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+
+}
+
+/*Le damos estilo a los emogis de ul contacto.*/
+.contactos .fa-solid{
+    padding-top: 5%;
+    color: #f56a6a;
+    display: flex;
+}
+
+/*Le damos estilo a los p del ul contacto.*/
+.contactos p{
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 3%;
+    color: #7F888F;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Le damos color a la p de la section comunicacion*/
+.comunicacion p{
+    color: #7F888F;
+}
+
+/* Ponemos estilo al footer del menu */
+
+footer .copyright{
+    color: #9fa3a6;
+    font-size: 0.9em;
+}
+
+/*Quitamos el estilo a todos los ul y li d la pagina*/
+
+li ul{
+    display: none;
+    list-style: none;
+}
+
+/*A los ul del menu le quitamos el estilo */
+
+.menu>ul{
+    list-style: none;
+}
+
+/*Le ponemos un estilo a menu y todo lo que haya dentro de este */
+.menu ul a{
+    border-bottom: 0;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    padding: 0.625em 0;
+    letter-spacing: 0.075em; /*esto sirve para el espaciado del las letras */
+    border-top: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+/*Con esto cremos los menus ocultos*/
+
+li:hover ul{
+    display: block;
+}
+
+/* Ponemos un pading a todo lo que no es el menu*/
+
+/*Le ponemos un estilo al contenido */
+
+.contenido{
+    padding: 0 5em 0.1em 5em;
+}
+
+/*Le ponemos un display flex para que la imagen y el texto salga en la misma linea*/
+
+.tatuaje{
+    display: flex;
+}
+
+
+ /*Le ponemos a los iconos un estilo */
+
+span{
+    color: #f56a6a;
+    font-size: 2.75rem;
+    position: relative;
+    top: 0.05em; /* Le decimos que la parte de arriva tenga esta margen*/
+}
+
+/*Con esto rotamos un div que tiene dentro cada uno de los iconos que tenemos*/ 
+
+.girar{
+    transform:rotate(45deg); /* Rotamos un angulo de 45% el div */
+    border-radius: 0.25rem;
+    border: solid 2px rgba(210, 215, 217, 0.75); /*Le ponemos un borde al div para que sevea la forma de diamante */
+    display: block;
+    padding: 15px; /* Le ponemos un espaciado para que no quede tan pegado al icono */ 
+}
+
+/*Ahora haremos otra rotacion pero solo en los iconos para que estos se centren y no queden torcidos*/
+
+.diamante {
+    transform: rotate(-45deg); /* hacemos la rotacion pero a la inversa para centrarlo */
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.content{
+    margin-left: 24px; /* Le ponemos margen a la izquierda al contenido de texto que tiene cada icono pra que no este tan junto*/
+}
+
+/* Ponemos estilos a los iconos */
+
+.iconos{
+    flex-wrap: wrap; /*Nos permite controlar la dirreción de los elementos*/
+    display: flex;
+
+}
+
+
+/* Con esto ponemos estilo tanto a los iconos como a las estiquetas article */ 
+
+.iconos article{
+    align-items: center;
+    display: flex;
+    margin: 2em 0 3em 2em;
+    position: relative;
+    width: calc(50% - 3em);
+
+}
+
+/*Ponemos estilo a cada uno de los articlos con sus respectivas imagenes*/
+
+.articulo{
+    width: 25%;
+    margin-left: 5em; /* Ponemos un margen a la izquierda */ 
+    position: relative;
+}
+
+/*Con esto ponemos estilo a todo el div que engloba los articulos */
+
+.publicaciones{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end; /*Se agrupan los elementos al final*/
+}
+
+/* Le ponemos estilo a las imagenes de articulo*/
+
+.imagen{
+    border-radius: 0.375em; /* redondemos un poco lo que es el borde de la imagen */
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+
