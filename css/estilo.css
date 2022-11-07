@@ -42,6 +42,34 @@ p{
     border-bottom: solid 3px #f56a6a;/*le ponemos un borde solo en la parte de abajo*/
 }
 
+/*Le ponemos un margen al buscador*/
+
+.buscador{
+    margin-bottom: 1em; /Añadimos margen abajo del div buscador/
+}
+
+
+/Le ponemos un estilo al input del buscado/
+
+input[type=text] {
+
+    background: #ffffff; /Le añadimos un color de fondo/
+
+    border-radius: 0.375em; /Le añadimos bordes redondos al input/
+
+    border: solid 1px rgba(210, 215, 217, 0.75); /Le añadimos borde al input/
+
+    color: inherit; /heredara su valor de su elemento principal./
+
+    padding: 0 1em; /Le ponemos un padding a la izquierda/
+
+    text-decoration: none; /Le quitamos la decoración que viene por defecto/
+
+    width: 100%; /hacemos que ocupe todo el ancho posible/
+
+}
+
+
 /* Aqui  a los botones que son a le damos estilo para que se parezca mas a esto */
 
 .boton{
