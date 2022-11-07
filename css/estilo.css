@@ -44,7 +44,7 @@ p{
 
 /*Le ponemos un margen al buscador*/
 
-#buscador{
+.buscador{
     margin-bottom: 1em; /Añadimos margen abajo del div buscador/
 }
 
